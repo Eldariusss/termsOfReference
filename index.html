@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MetaMask Integration</title>
+    <link rel="stylesheet" href="src/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.7.1/dist/web3.min.js"></script>
+</head>
+<body>
+    <div class="wallet">
+        <button class="wallet__connect-button">Подключить MetaMask</button>
+        <p class="wallet__account">Адрес: не подключен</p>
+    </div>
+
+    <div class="hasher">
+        <textarea class="hasher__input" placeholder="Введите текст для хэширования"></textarea>
+        <button class="hasher__hash-button">Получить SHA-256</button>
+        <p class="hasher__result">Результат хэширования: <span class="hasher__hash"></span></p>
+    </div>
+
+    <div class="dock-panel">
+        <ul id="app-list">
+            //Список defi
+        </ul>
+        <iframe id="app-frame" src="" "></iframe>
+    </div>
+
+    <iframe class="dock__iframe" src="" frameborder="0"></iframe>
+
+    <div class="aes-encryptor">
+        <textarea class="aes-encryptor__input" placeholder="Введите текст для шифрования"></textarea>
+        <input class="aes-encryptor__key" type="text" placeholder="Введите ключ" id="encrypt-key">
+        <button class="aes-encryptor__generate-key-button" id="generate-encrypt-key">Сгенерировать ключ</button>
+        <button class="aes-encryptor__encrypt-button">Зашифровать</button>
+        <div class="aes-encryptor__encrypted"></div>
+    </div>
+
+    <div class="aes-decryptor">
+        <textarea class="aes-decryptor__input" placeholder="Введите зашифрованный текст"></textarea>
+        <input class="aes-decryptor__key" type="text" placeholder="Введите ключ" id="decrypt-key">
+        <input class="aes-decryptor__iv" type="text" placeholder="Введите IV" id="decrypt-iv">
+        <button class="aes-decryptor__decrypt-button">Расшифровать</button>
+        <div class="aes-decryptor__decrypted"></div>
+    </div>
+
+     <div class="balance">
+        <div class="balance-checker">
+            <input type="text" id="wallet-address" placeholder="Введите адрес кошелька" />
+            <select id="network">
+                <option value="kovan">Kovan</option>
+                <option value="polygon">Polygon</option>
+            </select>
+            <button id="check-balance">Проверить баланс</button>
+            <div id="balance">Баланс: </div>
+        </div>
+     </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.aes-decryptor {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    &__input,
+    &__key,
+    &__iv {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    &__decrypt-button {
+      padding: 10px 20px;
+      background-color: #f6851b;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+  
+      &:hover {
+        background-color: #d4741a;
+      }
+    }
+  
+    &__result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  
+    &__decrypted {
+      font-weight: bold;
+    }
+  }

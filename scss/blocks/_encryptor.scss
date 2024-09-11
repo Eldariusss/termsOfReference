@@ -1,0 +1,68 @@
+.aes-encryptor {
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    &__input,
+    &__key {
+      width: 80%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    &__encrypt-button {
+      padding: 10px 20px;
+      background-color: #f6851b;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-bottom: 30px;
+  
+      &:hover {
+        background-color: #d4741a;
+      }
+    }
+  
+    &__result {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  
+    &__encrypted {
+      font-weight: bold;
+    }
+
+#generate-encrypt-key {
+  // Стили для кнопки генерации ключа
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px;
+
+  &:hover {
+      background-color: #0056b3;
+  }
+
+  &:focus {
+      outline: none;
+  }
+}
+
+  }

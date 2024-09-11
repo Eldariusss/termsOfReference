@@ -1,0 +1,46 @@
+.balance {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+
+    &-checker {
+        border: 1px solid #ddd;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        width: 100%;
+        max-width: 600px;
+        text-align: center;
+    
+        input[type="text"],
+        select,
+        button {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        button {
+            border: none;
+            background-color: #28a745;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            max-width: 300px;
+    
+            &:hover {
+                background-color: #218838;
+            }
+        }
+
+        #balance {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #e9ecef;
+        }
+    }
+}
